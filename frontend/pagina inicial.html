@@ -6,6 +6,88 @@
     <title>Gamix</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+    .cabecalho {
+      height: 12vh;
+      background-color: #101010;
+      color: #ffffff;
+      font-size: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-inline: 1rem;
+    }
+
+    .botao-entrar,
+    .botao-cadastrar {
+      border-radius: 15px;
+      width: 10rem;
+      height: 4rem;
+      font-size: 1.7rem;
+    }
+
+    .botao-entrar {
+      border: 1px solid #ffffff;
+      background-color: #101010;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .botao-cadastrar {
+      background-color: #ffffff;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .botoes-cabecalho {
+      margin-left: auto;
+    }
+
+    .conteudo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      gap: 2rem;
+      font-size: 3rem;
+      position: relative;
+      z-index: 1;
+      color: #ffffff;
+    }
+
+    .conteudo .botao-cadastrar {
+      width: 14rem;
+    }
+
+    .conteudo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: url(https://www.gamerfocus.co/wp-content/uploads/2017/01/steam-games.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: auto;
+      height: 100vh;
+      opacity: 0.2;
+    }
+
+    .informacoes {
+      background-color: #000000;
+      color: #ffffff;
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 20px;
+    }
+
+    .imagem {
+      height: 0rem;
+      width: 0rem;
+    }
+  </style>
   <body>
     <header>
       <div class="cabecalho">
@@ -16,5 +98,23 @@
         </div>
       </div>
     </header>
+    <main>
+      <div class="conteudo">
+        <h1>Gamix</h1>
+        <p>Todos os jogos em um só lugar</p>
+        <button class="botao-cadastrar">Fazer Cadastro</button>
+      </div>
+    </main>
+    <footer>
+      <div class="informacoes">
+        <p>
+          © 2025 Lorem Ipson Entertainment LLC<br />Todo o conteúdo, títulos de
+          jogos, nomes comerciais e/ou designações comerciais, marcas
+          comerciais, arte e imagens associadas são usadas exclusivamente para
+          fins acadêmicos não comerciais, com material sob direitos autorais dos
+          seus respectivos proprietários. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
