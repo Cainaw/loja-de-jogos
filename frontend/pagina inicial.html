@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <style>
-    .cabecalho {
-      height: 12vh;
-      background-color: #101010;
-      color: #ffffff;
-      font-size: 2.5rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding-inline: 1rem;
-    }
-
     .botao-entrar,
     .botao-cadastrar {
       border-radius: 15px;
@@ -93,7 +82,12 @@
       <div class="cabecalho">
         <h1>Gamix</h1>
         <div class="botoes-cabecalho">
-          <button class="botao-entrar">Entrar</button>
+          <button
+            class="botao-entrar"
+            onclick="window.location.href='pagina login.html'"
+          >
+            Entrar
+          </button>
           <button class="botao-cadastrar">Cadastrar</button>
         </div>
       </div>
@@ -113,6 +107,11 @@
           comerciais, arte e imagens associadas são usadas exclusivamente para
           fins acadêmicos não comerciais, com material sob direitos autorais dos
           seus respectivos proprietários. Todos os direitos reservados.
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            >Mais informações</a
+          >
         </p>
       </div>
     </footer>
