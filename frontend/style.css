@@ -17,3 +17,41 @@ body {
   align-items: center;
   padding-inline: 1rem;
 }
+
+.botao-entrar {
+  border-radius: 15px;
+  width: 10rem;
+  height: 4rem;
+  font-size: 1.7rem;
+  border: 1px solid #ffffff;
+  background-color: #101010;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.botao-cadastrar {
+  border-radius: 15px;
+  width: 10rem;
+  height: 4rem;
+  font-size: 1.7rem;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.botoes-cabecalho {
+  margin-left: auto;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
